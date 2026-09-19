@@ -13,7 +13,7 @@ public class RosterNameController {
     public RosterNameController(RosterNameService rosterNameService) {
         this.rosterNameService = rosterNameService;
     }
-
+    // Returns the roster name through the service layer.
     @GetMapping("/roster-name")
     public RosterNameDto getRosterName() {
         return rosterNameService.getRosterName();
